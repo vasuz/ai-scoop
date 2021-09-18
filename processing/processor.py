@@ -18,7 +18,7 @@ class Processor:
         self.url = url
         self.article = None
 
-        self.retrieve()
+        self.__retrieve()
 
     def __retrieve(self):
         # For different language newspaper refer above table
@@ -39,16 +39,16 @@ class Processor:
         self.article = article
 
     def text(self):
-        return self.article.text;
+        return self.article.text
 
     def image(self):
-        return self.article.top_image;
+        return self.article.top_image
 
     def authors(self):
-        return self.article.authors;
+        return self.article.authors
 
     def keywords(self):
-        return self.article.keywords;
+        return self.article.keywords
 
     # Summarizes the
     def summarize(self):
@@ -66,10 +66,10 @@ class Processor:
         # Summarize document.
         result_dict = auto_abstractor.summarize(article.text, abstractable_doc)
 
-        summ_article = "";
+        summ_article = ""
 
         # Output result.
         for sentence in result_dict["summarize_result"]:
             summ_article += sentence
 
-        return summ_article;
+        return summ_article
