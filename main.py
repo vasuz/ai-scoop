@@ -1,5 +1,5 @@
 import flask
-from flask import request, jsonify
+from flask import request, jsonify, Response
 
 import model
 from validators import url as valid_url
@@ -11,9 +11,9 @@ app.config["DEBUG"] = True
 def go():
     url = request.args.get('url')
 
-    if valid_url(url):
+    if url and valid_url(url):
         return jsonify(model.process(url))
     else:
-        return jsonify("Please provide a valid URL.")
+        return "Please provide a valid URL.", 400
 
 app.run()
