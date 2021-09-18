@@ -7,7 +7,10 @@ app.config["DEBUG"] = True
 
 @app.route('/api/go', methods=["POST"])
 def go():
-    print(request)
-    return jsonify(model.process(""))
+    url = request.args.get('url')
+    if url:
+        return jsonify(model.process(url))
+    else:
+        return jsonify("Please provide a valid URL.")
 
 app.run()
