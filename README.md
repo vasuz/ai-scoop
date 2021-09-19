@@ -23,5 +23,5 @@ The AI Scoop works by:
 # Our Goal
 * Our goal is, first and foremost, is to make learning more fun and engaging for kids.
 * Overworked/underpaid teachers can quickly use our website to create content, and save several hours each week cultivating articles/creating activities/formatting it themselves.
-* Our product allows them to have a better work-life balance and spend time on other, more rewarding parts of teaching.
+   * Our services allows them to have a better work-life balance and spend time on other, more rewarding parts of teaching.
 * Parents can read the original article and use our website for their kids, and then discuss the content after with their kids. Education **and** bonding!
