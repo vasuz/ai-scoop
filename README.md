@@ -1,7 +1,7 @@
 # The AI Scoop
 The AI Scoop is a revolutionary educational service allowing anyone — parents, teachers, even kids — to create a kids magazine ***100% automatically from an article link!***
 
-### [**> Try it! <**](https://theaiscoop.hadeelfarhan.repl.co/)
+### [**> Try it! <**](https://thankful-mushroom-052c89e0f.azurestaticapps.net/)
 
 <img src='https://i.imgur.com/WUq9Wcr.jpeg' alt='example' width='30%'/>
 
@@ -17,7 +17,7 @@ The AI Scoop works by:
 
 # Tech Stack
 * Back End
-   * Azure Functions (API)
+   * Azure Functions (API) / Azure Static Apps
    * Python
    * NLTK (summarization model)
 * Front End
