@@ -3,8 +3,7 @@ The AI Scoop is a revolutionary educational service allowing anyone — parents,
 
 ### [**> Try it! <**](https://thankful-mushroom-052c89e0f.azurestaticapps.net/)
 
-<img src='https://i.imgur.com/WUq9Wcr.jpeg' width='35%'/> <img src='https://i.imgur.com/jX3LeJs.png' width='35%'/>
-<img src='https://i.imgur.com/IXhPHTg.png' width='35%'/> <img src='https://i.imgur.com/Dhfnz1V.png' width='35%'/>
+<img src='https://i.imgur.com/WUq9Wcr.jpeg' width='24%'/> <img src='https://i.imgur.com/jX3LeJs.png' width='24%'/> <img src='https://i.imgur.com/IXhPHTg.png' width='24%'/> <img src='https://i.imgur.com/Dhfnz1V.png' width='24%'/>
 
 # How it works
 The AI Scoop works by:
