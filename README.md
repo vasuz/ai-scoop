@@ -1,6 +1,6 @@
 # The AI Scoop
 ### [> Try it! <](https://theaiscoop.hadeelfarhan.repl.co/)
-The AI Scoop is a revolutionary new service in the education space that allows anyone - parents, teachers, and even kids - to provide a link to an article and receive an automatically-generated kids magazine based on information in the article.
+The AI Scoop is a revolutionary educational service allowing anyone - parents, teachers, and even kids - to create a kids magazine *100% automatically generated from an article*!
 
 <img src='https://i.imgur.com/WUq9Wcr.jpeg' alt='example' width='30%'/>
 
