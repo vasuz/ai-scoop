@@ -26,4 +26,4 @@ The AI Scoop works by:
 * Our product allows them to have a better work-life balance and spend time on other, more rewarding parts of teaching.
 * Parents can read the original article and use our website for their kids, and then discuss the content after with their kids. Education **and** bonding!
 
-# [Try it!](https://theaiscoop.hadeelfarhan.repl.co/)
+# [Try it here!](https://theaiscoop.hadeelfarhan.repl.co/)
