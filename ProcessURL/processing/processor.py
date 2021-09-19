@@ -1,7 +1,10 @@
 from newspaper import Article
+from override_processor import process_override
 from pysummarization.nlpbase.auto_abstractor import AutoAbstractor
 from pysummarization.tokenizabledoc.simple_tokenizer import SimpleTokenizer
 from pysummarization.abstractabledoc.top_n_rank_abstractor import TopNRankAbstractor
+
+
 # requires NLTK
 # In the python console, use these two commands
 # import nltk
@@ -64,7 +67,7 @@ class Processor:
         # Object of abstracting and filtering document.
         abstractable_doc = TopNRankAbstractor()
         # Summarize document.
-        result_dict = auto_abstractor.summarize(article.text, abstractable_doc)
+        result_dict = auto_abstractor.summarize(process_override(article.text), abstractable_doc)
 
         summ_article = ""
 
