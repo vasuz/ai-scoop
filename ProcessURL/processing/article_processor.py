@@ -5,6 +5,7 @@ from pysummarization.tokenizabledoc.simple_tokenizer import SimpleTokenizer
 from pysummarization.abstractabledoc.top_n_rank_abstractor import TopNRankAbstractor
 from .components.dictionary import get_definition_merriam
 from .components.wordsearch import get_word_search
+from .components.simplifier import simplify_text
 
 # requires NLTK
 # In the python console, use these two commands
@@ -24,40 +25,14 @@ class ArticleProcessor:
 
         self.__retrieve()
 
-    def __retrieve(self):
-        # For different language newspaper refer above table
-        article = Article(self.url, language="en")  # en for English
-
-        # To download the article
-        article.download()
-        print("Successfully downloaded article")
-
-        # To parse the article
-        article.parse()
-        print("Successfully parsed article")
-
-        # To perform natural language processing ie..nlp
-        article.nlp()
-        print("Successfully processed article")
-
-        self.article = article
-
-    def heading(self):
-        return self.article.title
-
-    def text(self):
-        return self.article.text
-
-    def image(self):
-        return self.article.top_image
-
-    def authors(self):
-        return self.article.authors
-
-    def keywords(self):
+        self._summary = self.__summarize()
+        self._keywords = self.__keywords()
+        self._keyword_definitions = self.__keyword_defs()
+    
+    def __keywords(self):
         word_list = self.article.keywords
         remove_list = []
-        summary = self.summarize()
+        summary = self.get_summary()
 
         for word in word_list:
             if (summary.count(word) < 0 or any(char.isdigit() for char in word)):
@@ -67,10 +42,10 @@ class ArticleProcessor:
             word_list.remove(word)
 
         return word_list
-
-    def keyword_defs(self):
+    
+    def __keyword_defs(self):
         dict = {}
-        words = self.keywords()
+        words = self.get_keywords()
 
         for word in words:
             definition = get_definition_merriam(word)
@@ -80,11 +55,7 @@ class ArticleProcessor:
 
         return dict
     
-    def word_search(self):
-        return get_word_search(self.keywords(), self.heading())
-
-    # Summarizes the
-    def summarize(self):
+    def __summarize(self):
         article = self.article
 
         # To extract summary
@@ -104,5 +75,49 @@ class ArticleProcessor:
         # Output result.
         for sentence in result_dict["summarize_result"]:
             summ_article += sentence
+        
+        simplified = simplify_text(summ_article)
 
-        return summ_article
+        return simplified
+
+    def __retrieve(self):
+        # For different language newspaper refer above table
+        article = Article(self.url, language="en")  # en for English
+
+        # To download the article
+        article.download()
+        print("Successfully downloaded article")
+
+        # To parse the article
+        article.parse()
+        print("Successfully parsed article")
+
+        # To perform natural language processing ie..nlp
+        article.nlp()
+        print("Successfully processed article")
+
+        self.article = article
+
+    def get_heading(self):
+        return self.article.title
+
+    def get_raw_text(self):
+        return self.article.text
+
+    def get_image(self):
+        return self.article.top_image
+
+    def get_authors(self):
+        return self.article.authors
+
+    def get_keywords(self):
+        return self._keywords
+
+    def get_keyword_definitions(self):
+        return self._keyword_definitions
+    
+    def get_word_search(self):
+        return get_word_search(self.get_keywords(), self.get_heading())
+
+    def get_summary(self):
+        return self._summary

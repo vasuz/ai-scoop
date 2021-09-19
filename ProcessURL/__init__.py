@@ -14,12 +14,12 @@ def main(req: func.HttpRequest) -> func.HttpResponse:
         proc = ArticleProcessor(url)
 
         result = {
-            "authors": proc.authors(),
-            "title": proc.heading(),
-            "summary": proc.summarize(),
-            "image_url": proc.image(),
-            "ws_puzzle_url": proc.word_search(),
-            "dictionary": proc.keyword_defs()
+            "authors": proc.get_authors(),
+            "title": proc.get_heading(),
+            "summary": proc.get_summary(),
+            "image_url": proc.get_image(),
+            "ws_puzzle_url": proc.get_word_search(),
+            "dictionary": proc.get_keyword_definitions()
         }
 
         return func.HttpResponse(jsonify(result), mimetype="application/json")
