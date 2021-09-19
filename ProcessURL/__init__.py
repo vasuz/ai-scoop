@@ -19,7 +19,7 @@ def main(req: func.HttpRequest) -> func.HttpResponse:
             "summary": proc.get_summary(),
             "image_url": proc.get_image(),
             "ws_puzzle_url": proc.get_word_search(),
-            "dictionary": proc.get_keyword_definitions()
+            "vocabulary": proc.get_keyword_definitions()
         }
 
         return func.HttpResponse(jsonify(result), mimetype="application/json")

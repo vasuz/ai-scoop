@@ -3,7 +3,7 @@ from .override_processor import process_override
 from pysummarization.nlpbase.auto_abstractor import AutoAbstractor
 from pysummarization.tokenizabledoc.simple_tokenizer import SimpleTokenizer
 from pysummarization.abstractabledoc.top_n_rank_abstractor import TopNRankAbstractor
-from .components.dictionary import get_definition_merriam
+from .components.vocabulary import get_definition_merriam
 from .components.wordsearch import get_word_search
 from .components.simplifier import simplify_text
 
@@ -117,7 +117,7 @@ class ArticleProcessor:
         return self._keyword_definitions
     
     def get_word_search(self):
-        return get_word_search(self.get_keywords(), self.get_heading())
+        return get_word_search(self.get_keywords())
 
     def get_summary(self):
         return self._summary

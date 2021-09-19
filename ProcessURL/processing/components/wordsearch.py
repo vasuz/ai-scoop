@@ -1,7 +1,7 @@
 import requests
 import json
 
-def get_word_search(words, title):
+def get_word_search(words):
     endpoint = "https://thewordsearch.com/api/pri/testapikey/save_word_search/"
     headers = {'Content-Type': 'application/x-www-form-urlencoded'}
     data = {
