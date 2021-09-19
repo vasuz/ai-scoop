@@ -3,12 +3,13 @@ The AI Scoop is a revolutionary educational service allowing anyone — parents,
 
 ### [**> Try it! <**](https://thankful-mushroom-052c89e0f.azurestaticapps.net/)
 
-<img src='https://i.imgur.com/WUq9Wcr.jpeg' alt='example' width='30%'/>
+<img src='https://i.imgur.com/WUq9Wcr.jpeg' width='35%'/> <img src='https://i.imgur.com/jX3LeJs.png' width='35%'/>
+<img src='https://i.imgur.com/IXhPHTg.png' width='35%'/> <img src='https://i.imgur.com/Dhfnz1V.png' width='35%'/>
 
 # How it works
 The AI Scoop works by:
 * Parsing the relevant information, pictures, and content from the article (works for any news/informational website)
-* Applying a series of NLP AI algorithms to:
+* Applying a series of NLP algorithms to:
   1. **Summarize** the article's text
   2. **Simplify** the language to make the content kid-friendly (reduce language complexity)
 * Our back end generates additional magazine activities, such as a word search containing key vocabulary words from the article and their definitions.
