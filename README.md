@@ -14,11 +14,15 @@ The AI Scoop works by:
 * Once we process the article, the content and activities are loaded into our highly attractive Figma-designed UI to generate a magazine which can be saved/printed by the user.
 
 
-# Stack
-* Azure Functions - API (python)
-* HTML/CSS/JS - front end
-* NLTK - summarization NLP
-* [Figma - UI design](https://www.figma.com/file/eCmkwD7tTCFbwKDG1F1aU1/The-AI-Scoop-Frontend-Design?node-id=0%3A1)
+# Tech Stack
+* Back End
+   * Azure Functions (API)
+   * Python
+   * NLTK (summarization model)
+* Front End
+   * HTML/CSS
+   * JavaScript
+   * [Figma - UI design](https://www.figma.com/file/eCmkwD7tTCFbwKDG1F1aU1/The-AI-Scoop-Frontend-Design?node-id=0%3A1)
 
 # Our Goal
 * Our goal is, first and foremost, is to make learning more fun and engaging for kids.
