@@ -1,5 +1,5 @@
 # The AI Scoop
-The AI Scoop is a revolutionary educational service allowing anyone — parents, teachers, even kids — to create a kids magazine ***100% automatically from an article link!***
+The AI Scoop is a revolutionary educational service allowing anyone — parents, teachers, even kids — to create a kids magazine ***100% automatically from ANY article link!***
 
 ### [**> DEMO HERE <**](https://thankful-mushroom-052c89e0f.azurestaticapps.net/)</span>
 
