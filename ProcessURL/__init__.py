@@ -4,6 +4,7 @@ import azure.functions as func
 from ProcessURL.processing import processor
 from json import dumps as jsonify
 
+# need to separate __init__.py so this only runs once?
 import nltk
 nltk.data.path.append('./nltk_data')
 
@@ -22,13 +23,7 @@ def main(req: func.HttpRequest) -> func.HttpResponse:
             "image_url": proc.image(),
             "ws_puzzle_url": "imageurlhere",
             "cw_puzzle_url": "imageurlhere",
-            "dictionary": {
-                "word1": "definition1",
-                "word2": "definition2",
-                "word3": "definition3",
-                "word4": "definition4",
-                "word5": "definition5"
-            }
+            "dictionary": proc.keyword_defs()
         }
 
         return func.HttpResponse(jsonify(result), mimetype="application/json")
