@@ -1,6 +1,7 @@
 # The AI Scoop
+The AI Scoop is a revolutionary educational service allowing anyone — parents, teachers, even kids — to create a kids magazine ***100% automatically from an article link!***
+
 ### [> Try it! <](https://theaiscoop.hadeelfarhan.repl.co/)
-The AI Scoop is a revolutionary educational service allowing anyone - parents, teachers, and even kids - to create a kids magazine *100% automatically generated from an article*!
 
 <img src='https://i.imgur.com/WUq9Wcr.jpeg' alt='example' width='30%'/>
 
@@ -9,7 +10,7 @@ The AI Scoop works by:
 * Parsing the relevant information, pictures, and content from the article (works for any news/informational website)
 * Applying a series of NLP AI algorithms to:
   1. **Summarize** the article's text
-  2. **Simplify** the language to make the content kid-friendly.
+  2. **Simplify** the language to make the content kid-friendly (reduce language complexity)
 * Our back end generates additional magazine activities, such as a word search containing key vocabulary words from the article and their definitions.
 * Once we process the article, the content and activities are loaded into our highly attractive Figma-designed UI to generate a magazine which can be saved/printed by the user.
 
