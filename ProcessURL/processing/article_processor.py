@@ -3,7 +3,8 @@ from .override_processor import process_override
 from pysummarization.nlpbase.auto_abstractor import AutoAbstractor
 from pysummarization.tokenizabledoc.simple_tokenizer import SimpleTokenizer
 from pysummarization.abstractabledoc.top_n_rank_abstractor import TopNRankAbstractor
-from .dictionary import get_definition_merriam
+from .components.dictionary import get_definition_merriam
+from .components.wordsearch import get_word_search
 
 # requires NLTK
 # In the python console, use these two commands
@@ -16,7 +17,7 @@ from .dictionary import get_definition_merriam
 # call functions
 
 # TODO: Literally any error processing this is one exception away from blowing up into a bajillion byte-sized pieces
-class Processor:
+class ArticleProcessor:
     def __init__(self, url):
         self.url = url
         self.article = None
@@ -70,7 +71,7 @@ class Processor:
     def keyword_defs(self):
         dict = {}
         words = self.keywords()
-        
+
         for word in words:
             definition = get_definition_merriam(word)
             
@@ -78,6 +79,9 @@ class Processor:
                 dict[word] = definition
 
         return dict
+    
+    def word_search(self):
+        return get_word_search(self.keywords(), self.heading())
 
     # Summarizes the
     def summarize(self):
