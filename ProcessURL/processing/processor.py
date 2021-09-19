@@ -3,7 +3,7 @@ from .override_processor import process_override
 from pysummarization.nlpbase.auto_abstractor import AutoAbstractor
 from pysummarization.tokenizabledoc.simple_tokenizer import SimpleTokenizer
 from pysummarization.abstractabledoc.top_n_rank_abstractor import TopNRankAbstractor
-
+from dictionary import get_definition_merriam
 
 # requires NLTK
 # In the python console, use these two commands
@@ -54,7 +54,27 @@ class Processor:
         return self.article.authors
 
     def keywords(self):
-        return self.article.keywords
+        word_list = self.article.keywords
+        remove_list = []
+        summary = self.summarize();
+
+        for word in word_list:
+            if (summary.count(word) < 0 or any(char.isdigit() for char in word)):
+                remove_list.append(word);
+
+        for word in remove_list:
+            word_list.remove(word)
+
+        return self.word_list;
+
+    def keyword_defs(self):
+        dict = {};
+        words = self.keywords();
+
+        for word in words:
+            dict[word] = get_definition_merriam(word)
+
+        return dict
 
     # Summarizes the
     def summarize(self):
