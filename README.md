@@ -18,7 +18,7 @@ The AI Scoop works by:
 * Azure Functions - API (python)
 * HTML/CSS/JS - front end
 * NLTK - summarization NLP
-* Figma - UI design
+* [Figma - UI design](https://www.figma.com/file/eCmkwD7tTCFbwKDG1F1aU1/The-AI-Scoop-Frontend-Design?node-id=0%3A1)
 
 # Our Goal
 * Our goal is, first and foremost, is to make learning more fun and engaging for kids.
