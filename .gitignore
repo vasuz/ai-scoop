@@ -2,7 +2,9 @@
 .vscode
 .idea
 
+# Misc
 nltk_data
+appconfig.json
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
