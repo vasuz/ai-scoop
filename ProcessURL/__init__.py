@@ -4,10 +4,12 @@ import azure.functions as func
 from ProcessURL.processing import processor
 from json import dumps as jsonify
 
-def main(req: func.HttpRequest) -> func.HttpResponse:
-    logging.info('Python HTTP trigger function processed a request.')
+import nltk
+nltk.data.path.append('./nltk_data')
 
+def main(req: func.HttpRequest) -> func.HttpResponse:
     url = req.params.get('url')
+
     if not url:
         return func.HttpResponse("Please provide a valid URL.", status_code=400)
     else:
