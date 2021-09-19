@@ -70,10 +70,10 @@ class Processor:
     def keyword_defs(self):
         dict = {}
         words = self.keywords()
-        import logging
+        
         for word in words:
             definition = get_definition_merriam(word)
-            logging.info(f"W: {word} D: {definition}")
+            
             if definition:
                 dict[word] = definition
 
