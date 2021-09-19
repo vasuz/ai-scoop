@@ -17,10 +17,11 @@ The AI Scoop works by:
 
 # Tech Stack
 * Back End
-   * Azure Functions (API) / Azure Static Apps
+   * Azure Functions (API)
    * Python
    * NLTK (summarization model)
 * Front End
+   * Azure Static Apps
    * HTML/CSS
    * JavaScript
    * [Figma - UI design](https://www.figma.com/file/eCmkwD7tTCFbwKDG1F1aU1/The-AI-Scoop-Frontend-Design?node-id=0%3A1)
