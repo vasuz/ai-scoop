@@ -41,6 +41,9 @@ class Processor:
 
         self.article = article
 
+    def heading(self):
+        return self.article.title
+
     def text(self):
         return self.article.text
 
