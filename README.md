@@ -7,7 +7,9 @@ The AI Scoop is a revolutionary new service in the education space that allows a
 # How it works
 The AI Scoop works by:
 * Parsing the relevant information, pictures, and content from the article (works for any news/informational website)
-* Applying an NLP AI algorithm to **summarize** the article's contents and **simplify** them in order to make the materials kid-friendly.
+* Applying multiple NLP AI algorithms to:
+  1. **Summarize** the article's text
+  2. **Simplify** the language to make the content kid-friendly.
 * Our back end generates additional magazine activities, such as a word search containing key vocabulary words from the article and their definitions.
 * Once we process the article, the content and activities are loaded into our highly attractive Figma-designed UI to generate a magazine which can be saved/printed by the user.
 
