@@ -1,0 +1,13 @@
+{
+    "dictionary": [
+        {"word1": "definition1"},
+        {"word2": "definition2"},
+        {"word3": "definition3"}
+    ],
+    "summary": "Atlanta, Georgia (CNN) On a warm September afternoon, Mona Scott sat on the front porch while her home baked like an oven.\n As she ran a frozen water bottle across her forehead and arms, Scott told CNN her air conditioning broke 10 days earlier and had not yet been fixed.\n\"The windows are painted shut,\" Scott said.\n \"We come outside at night to sleep because it's too hot inside.\nLike Scott, residents in the low-income communities across south and southwest Atlanta are struggling to cope with the hottest summer since the Dust Bowl.\n\"It's just so hot\" Scott said as she wiped sweat from her brow.\nHeat waves are the most lethal weather-related disaster in America.\n And these health risks are not distributed equally .\nPeople like Scott are the reason that NOAA's National Integrated Heat Health Information System (NIHHIS) campaign has been mapping America's urban heat islands since 2017.\n She has witnessed firsthand her community's lack of access to air conditioning and shaded green space.\n",
+    "author": ["FirstName1 LastName1", "FirstName2 LastName2"],
+    "title": "Title of The Article",
+    "ws_puzzle_url": "imageurlhere",
+    "cw_puzzle_url": "imageurlhere",
+    "image_url": "imageurlhere"
+}

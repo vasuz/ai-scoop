@@ -1,5 +1,5 @@
 from newspaper import Article
-from override_processor import process_override
+from .override_processor import process_override
 from pysummarization.nlpbase.auto_abstractor import AutoAbstractor
 from pysummarization.tokenizabledoc.simple_tokenizer import SimpleTokenizer
 from pysummarization.abstractabledoc.top_n_rank_abstractor import TopNRankAbstractor
